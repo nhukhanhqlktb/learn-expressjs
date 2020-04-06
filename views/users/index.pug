@@ -1,0 +1,7 @@
+h1 Danh sach user
+form(action="/users/search" method="GET")
+	input(type="text" name="q" value=queri) 
+	button Search
+ul
+	each item in users
+		li=item.name

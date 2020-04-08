@@ -1,7 +1,12 @@
 h1 Danh sach user
-form(action="/users/search" method="GET")
-	input(type="text" name="q" value=queri) 
-	button Search
+	span &nbsp;
+	a(href="/users") Home
+form(action="/users/search", method="GET")
+	input(type="text", name="q", value=queri) 
+	button Timkiem
 ul
 	each item in users
-		li=item.name
+		li= item.name
+			span &nbsp;
+			a(href="/users/" + item.id) view
+a(href="/users/create") Create new user

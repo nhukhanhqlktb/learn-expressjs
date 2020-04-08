@@ -1,40 +1,27 @@
 var express = require('express');
-var app = express();
+var bodyParser = require('body-parser');
+
+var userRoute = require('./routes/user.route');
+
 var port = 3000;
-var dataUser = [
-	{id: 1, name:'Nguyen Nhu'},
-	{id: 2, name:'Phan Van'},
-	{id: 3, name:'Hoang Tu'},
-	{id: 4, name:'Giang Ho'},
-	{id: 5, name:'Hoc hanh'}
-]
+var app = express();
 
 app.set('view engine', 'pug');
 app.set('views','./views');
 
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
 	res.render('index', {
-		name: 'Kaka'
+		name: 'Everybody'
 	});
 });
 
-app.get('/users', (req, res) => {
-	res.render('./users/index',{
-		users: dataUser
-	});
-});
-
-app.get('/users/search', (req, res) => {
-	var q = req.query.q;
-	var matchedUser = dataUser.filter(function(item){
-		return item.name.indexOf(q) !== -1;
-	});
-	res.render('./users/index',{
-		users: matchedUser,
-		queri: q
-	});
-})
+app.use('/users', userRoute);
 
 app.listen(port, () => {
-	console.log('Server is run');
+	console.log('Server is run on port ' + port);
 });

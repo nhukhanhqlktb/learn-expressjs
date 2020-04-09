@@ -1,40 +1,19 @@
 {
   "users": [
     {
-      "id": "VgtcPpCp3",
-      "name": "Nguyen Ba Dao"
+      "id": "r46dEGEzG",
+      "name": "Nguyen Nhu Khanh",
+      "phone": "0333777799"
     },
     {
-      "id": "8z3IPp-L9",
-      "name": "Ngo Di Choi"
+      "id": "0-NG1Pa3q",
+      "name": "Nguyen Ba An",
+      "phone": "0912456876"
     },
     {
-      "id": "lIkvHam4m",
-      "name": "Hoc Lam Gi"
-    },
-    {
-      "id": "7DD1N8wFC",
-      "name": "Oanh Nhau Khong"
-    },
-    {
-      "id": "5Bb7yCMqB",
-      "name": "Hoc Hanh Cham Chi"
-    },
-    {
-      "id": "SKvVpiuay",
-      "name": "Da xong"
-    },
-    {
-      "id": "HQ2Riv4JF",
-      "name": "Da xong"
-    },
-    {
-      "id": "78AhK0t5k",
-      "name": "Da xong"
-    },
-    {
-      "id": "fwZsljMw1",
-      "name": "Xong roi"
+      "id": "yJBUuOS2q",
+      "name": "Hoc lam gi",
+      "phone": "0492847522"
     }
   ]
 }

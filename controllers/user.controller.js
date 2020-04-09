@@ -31,7 +31,8 @@ module.exports.get = function(req, res){
 
 module.exports.postCreate = function(req, res) {
 	db.get('users')
-	  .push({id: shortid.generate(), name: req.body.name})
+	  .push({id: shortid.generate(), name: req.body.name, phone: req.body.phone})
 	  .write();
+	  console.log(req.body);
 	res.redirect('/users');	 
 }

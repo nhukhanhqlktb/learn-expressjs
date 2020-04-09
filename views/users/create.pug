@@ -1,4 +1,10 @@
-h1 Create new user
-form(action="/users/create", method="POST")
-	input(type="text", name="name")
-	button Create
+extends ../layouts/common
+
+block content
+	h1 New user
+	form(action="/users/create", method="POST")
+		.form-group
+			input(type="text", name="name", class="form-control", placeholder="Name")
+		.form-group
+			input(type="text", name="phone", class="form-control",  placeholder="Phone")
+		button.btn.btn-primary Create

@@ -1,12 +1,23 @@
-h1 Danh sach user
-	span &nbsp;
-	a(href="/users") Home
-form(action="/users/search", method="GET")
-	input(type="text", name="q", value=queri) 
-	button Timkiem
-ul
-	each item in users
-		li= item.name
-			span &nbsp;
-			a(href="/users/" + item.id) view
-a(href="/users/create") Create new user
+extends ../layouts/common
+
+block content
+	h1 Users
+	form(action="/users/search", method="GET")
+		.form-group.d-flex
+			input(type="text", name="q", value=queri, class="form-control") 
+			button(class="btn btn-primary") Timkiem
+	table.table.table-striped.table-hover
+		thead.thead-light
+			tr
+				th Name
+				th Phone
+				th Detail
+		tbody
+			each user in users
+				tr
+					td= user.name
+					td= user.phone
+					td
+						a(href="/users/" + user.id) view
+
+	a.btn.btn-primary(href="/users/create") Create new user

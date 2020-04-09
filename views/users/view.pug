@@ -1,5 +1,11 @@
-h1 Detail user
-p
-	b Name:
-	span &nbsp;
-	span= user.name
+extends ../layouts/common
+
+block content
+	h1 Detail user
+	table.table.table-striped.table-hover
+		tr
+			th Name
+			th Phone
+		tr
+			td= user.name
+			td= user.phone

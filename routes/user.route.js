@@ -7,11 +7,6 @@ var router = express.Router();
 
 router.get('/', userController.index);
 
-router.get('/cookie', function(req, res, next){
-	res.cookie('user-id', 12345);
-	res.send('hello');
-});
-
 router.get('/search', userController.search);
 
 router.get('/create', userController.create);

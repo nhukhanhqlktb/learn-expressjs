@@ -2,10 +2,12 @@ extends ../layouts/common
 
 block content
 	h1 Users
-	form(action="/users/search", method="GET")
-		.form-group.d-flex
-			input(type="text", name="q", value=queri, class="form-control") 
-			button(class="btn btn-primary") Timkiem
+	.row
+		.col-md-6.col.ml-auto
+			form(action="/users/search", method="GET")
+				.form-group.d-flex
+					input(type="text", name="q", value=queri, class="form-control") 
+					button(class="btn btn-primary ml-2") Timkiem
 	table.table.table-striped.table-hover
 		thead.thead-light
 			tr

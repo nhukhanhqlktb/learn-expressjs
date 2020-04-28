@@ -1,19 +1,25 @@
 html
 	head
 		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
 		
 	body
 		.container
 			nav.navbar.navbar-expand-lg.navbar-light.bg-light
-				a.navbar-brand(href='#') Myself
+				a.navbar-brand(href='#') Navbar
 				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
 					span.navbar-toggler-icon
 				#navbarSupportedContent.collapse.navbar-collapse
 					ul.navbar-nav.mr-auto
-						li.nav-item
-							a.nav-link(href='/') Home
+						li.nav-item.active
+							a.nav-link(href='/')
+								| Home 
+								span.sr-only (current)
 						li.nav-item
 							a.nav-link(href='/users') Users
 
 			block content
+
+		script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")

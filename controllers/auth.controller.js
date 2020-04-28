@@ -1,4 +1,4 @@
-var db = require('../db.js');
+const db = require('../db.js');
 
 module.exports.login = function(req, res){
 	res.render('auth/login')
@@ -30,5 +30,6 @@ module.exports.postLogin = function(req, res) {
 		return;
 	}
 
+	res.cookie('userID', user.id);
 	res.redirect('/users');
 };

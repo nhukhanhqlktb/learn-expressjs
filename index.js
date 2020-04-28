@@ -15,7 +15,7 @@ app.set('views','./views');
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-app.use(cookieParser('hello'));
+app.use(cookieParser('hello')); //each id, it generates a private hash is different
 
 app.use(express.static('public'));
 

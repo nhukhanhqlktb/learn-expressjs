@@ -7,6 +7,14 @@
       "email": "nhukhanh@lp.vn",
       "password": "123",
       "avatar": "uploads\\b0c6de61230f68074316df038fe76a0a"
+    },
+    {
+      "name": "Ba An",
+      "phone": "0345 666 999",
+      "email": "An@123",
+      "password": "123",
+      "id": "-00ja3cQh",
+      "avatar": "uploads\\3ae87024546aaec0b8865d186e800771"
     }
   ],
   "products": [

@@ -11,7 +11,13 @@ block content
 			input(type="text", id="name", name="name", class="form-control", value= values ? values.name : '')
 		.form-group
 			label(for="phone") Phone
-			input(type="text", id="phone", name="phone", class="form-control", value= values ? values.phone : '')
+			input#phone(type="text", name="phone", class="form-control", value= values ? values.phone : '')
+		.form-group
+			label(for="email") Email
+			input#email(type="email", name="email", class="form-control", value= values ? values.email : '')
+		.form-group
+			label(for="password") Password
+			input#password(type="password", name="password", class="form-control", value= values ? values.password : '')
 		.form-group.justify-content-start
 			label(for="avatar") Avatar
 			input#avatar(type="file", name="avatar", class="form-control-file")

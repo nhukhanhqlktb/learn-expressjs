@@ -7,7 +7,7 @@ html
 	body
 		.container
 			nav.navbar.navbar-expand-lg.navbar-light.bg-light
-				a.navbar-brand(href='#') Nhu Khanh
+				a.navbar-brand(href='#') Buying
 				button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
 					span.navbar-toggler-icon
 				#navbarSupportedContent.collapse.navbar-collapse
@@ -18,10 +18,13 @@ html
 								span.sr-only (current)
 						li.nav-item
 							a.nav-link(href='/users') Users
+						li.nav-item
+							a.nav-link(href='/products') Products
 				if (user)
 					p= user.name
 
 			block content
 
+		block scripts
 		script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js")
 		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")

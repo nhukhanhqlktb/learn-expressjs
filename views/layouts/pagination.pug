@@ -1,0 +1,18 @@
+nav.mt-3(aria-label='Page navigation example')
+	- var i = 0;
+	ul.pagination.justify-content-end
+		li.page-item
+			a.page-link(href=`/products?page=1&limitPage=${limitPage}`, aria-label='First')
+				span(aria-hidden='true') &laquo;
+		li.page-item
+			a.page-link(href='/products?page=' + i + '&limitPage=' + limitPage) Previous
+
+		while i < limitPage
+			li.page-item
+				a.page-link(href='/products?page=' + ++i + '&limitPage=' + limitPage)= i
+		li.page-item
+			a.page-link(href='#') Next
+
+		li.page-item
+			a.page-link(href=`/products?page=${limitPage}&limitPage=${limitPage}`, aria-label='First')
+				span(aria-hidden='true') &raquo;

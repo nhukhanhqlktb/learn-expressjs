@@ -30,8 +30,13 @@ module.exports.get = function(req, res){
 };
 
 module.exports.postCreate = function(req, res) {
+	let data = { ...req.body };
+
+	data.id = shortid.generate();
+	data.avatar = req.file.path.slice(7);
+	
 	db.get('users')
-	  .push({id: shortid.generate(), name: req.body.name, phone: req.body.phone})
+	  .push(data)
 	  .write();
 	res.redirect('/users');
 };

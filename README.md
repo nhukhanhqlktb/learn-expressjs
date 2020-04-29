@@ -10,3 +10,6 @@
 | https://loremflickr.com/ | Free placeholder images |
 | a = expression \|\| 1 |expression is undefined or empty, a get 1|
 | lodash library | usually used in nodejs, js |
+| multer module | Read *multipart/form-data* of a form |
+| Upload file | + Using *multipart/form-data* of form + Save path into database. Purpose to get url, then show image on UI. Exercise: Upload many files |
+| Cookies | many different cookies? |

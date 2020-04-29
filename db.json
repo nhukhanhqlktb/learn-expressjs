@@ -1,40 +1,12 @@
 {
   "users": [
     {
-      "id": "r46dEGEzG",
       "name": "Nhu Khanh",
-      "phone": "0333777799",
-      "email": "nnk@gmail",
-      "password": "123"
-    },
-    {
-      "id": "0-NG1Pa3q",
-      "name": "Nguyen Ba An",
-      "phone": "0912456876"
-    },
-    {
-      "id": "yJBUuOS2q",
-      "name": "Hoc lam gi",
-      "phone": "0492847522",
-      "email": "nnk@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "yz2WU0nUt",
-      "name": "Ngo Phu Tham",
-      "phone": "05462197481",
-      "email": "nnk@.com",
-      "password": "123"
-    },
-    {
-      "id": "15JoJP-iL",
-      "name": "Nhu khanh",
-      "phone": "0378 094 248"
-    },
-    {
-      "id": "6hjImdXYm",
-      "name": "Ho va ten",
-      "phone": "925412246545"
+      "phone": "0999 999 999",
+      "id": "G9P4I4X4O",
+      "email": "nhukhanh@lp.vn",
+      "password": "123",
+      "avatar": "uploads\\b0c6de61230f68074316df038fe76a0a"
     }
   ],
   "products": [

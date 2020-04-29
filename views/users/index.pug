@@ -11,12 +11,15 @@ block content
 	table.table.table-striped.table-hover
 		thead.thead-light
 			tr
+				th Avatar
 				th Name
 				th Phone
 				th Detail
 		tbody
 			each user in users
 				tr
+					td.text-center
+						img(src= user.avatar, width="32")
 					td= user.name
 					td= user.phone
 					td

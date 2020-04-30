@@ -12,8 +12,7 @@ module.exports.addToCart = function(req, res) {
 
 	let count = db.get('sessions')
 		.find( {sessionId: sessionId} )
-		.get('cart') //.get('cart.' + productId, 0).value();
-		.value()[productId] || 0;
+		.get('cart.' + productId, 0).value();
 
 	db.get('sessions')
 		.find( {sessionId: sessionId} )

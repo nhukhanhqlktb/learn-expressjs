@@ -11,7 +11,7 @@ block content
 	table.table.table-striped.table-hover
 		thead.thead-light
 			tr
-				th Avatar
+				th.text-center Avatar
 				th Name
 				th Phone
 				th Detail
@@ -23,6 +23,6 @@ block content
 					td= user.name
 					td= user.phone
 					td
-						a(href="/users/" + user.id) view
+						a.btn.btn-info(href="/users/" + user.id) view
 
 	a.btn.btn-primary(href="/users/create") Create new user

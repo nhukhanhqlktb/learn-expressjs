@@ -1,14 +1,12 @@
 extends ../layouts/common
 
 block content
-	h1 Detail user
-	table.table.table-striped.table-hover
-		tr
-			th Avatar
-			th Name
-			th Phone
-		tr
-			td
-				img(src= user.avatar)
-			td= user.name
-			td= user.phone
+	h1.mb-5.mt-3 Detail user
+	.row
+		.col-lg-3.col-sm-6.col-10.mx-auto.mr-sm-auto
+			.card
+				img.card-img-top(src= `../${user.avatar}`, alt='#')
+				.card-body
+					h5.card-title= 'Name: ' + user.name
+					p.card-text= 'Email: ' + user.email
+					p.card-text= 'Phone: ' + user.phone

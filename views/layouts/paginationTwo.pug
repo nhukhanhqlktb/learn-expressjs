@@ -3,34 +3,42 @@ nav.mt-3(aria-label='Page navigation example')
 		li.page-item
 			a.page-link(href=`/${pageLink}?page=1&limitPage=${limitPage}`, aria-label='First')
 				span(aria-hidden='true') &laquo;
-		li.page-item
-			a.page-link(href='#') Previous
 
 		if(page === 1)
 			li.page-item
-				a.page-link(href=`/${pageLink}?page=1`) 1
+				a.page-link(href='#') Previous
+			li.page-item
+				a.page-link.bg-info.text-white(href=`/${pageLink}?page=1`) 1
 			li.page-item
 				a.page-link(href=`/${pageLink}?page=2`) 2
 			li.page-item
 				a.page-link(href=`/${pageLink}?page=3`) 3
+			li.page-item
+				a.page-link(href=`/${pageLink}?page=${page+1}`) Next
 		else
 			if(page < limitPage)
+				li.page-item
+					a.page-link(href=`/${pageLink}?page=${page-1}`) Previous
 				li.page-item
 					a.page-link(href=`/${pageLink}?page=${page-1}&limitPage=${limitPage}`)= page-1
 				li.page-item
 					a.page-link.bg-info.text-white(href=`/${pageLink}?page=${page}&limitPage=${limitPage}`)= page
 				li.page-item
 					a.page-link(href=`/${pageLink}?page=${page+1}&limitPage=${limitPage}`)= page+1
+				li.page-item
+					a.page-link(href=`/${pageLink}?page=${page+1}`) Next
 			else
 				li.page-item
-					a.page-link(href=`/${pageLink}?page=${limitPage-2}`)= limitPage-2
+					a.page-link(href=`/${pageLink}?page=${page-1}`) Previous
 				li.page-item
-					a.page-link(href=`/${pageLink}?page=${limitPage-1}`)= limitPage-1
+					a.page-link(href=`/${pageLink}?page=${page-2}`)= page-2
 				li.page-item
-					a.page-link(href=`/${pageLink}?page=${limitPage}`)= limitPage
+					a.page-link(href=`/${pageLink}?page=${page-1}`)= page-1
+				li.page-item
+					a.page-link.bg-info.text-white(href=`/${pageLink}?page=${page}`)= page
+				li.page-item
+					a.page-link(href=`#`) Next
 
-		li.page-item
-			a.page-link(href='#') Next
 		li.page-item
 			a.page-link(href=`/${pageLink}?page=${limitPage}&limitPage=${limitPage}`, aria-label='First')
 				span(aria-hidden='true') &raquo;

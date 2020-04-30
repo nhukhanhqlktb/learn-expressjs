@@ -30,7 +30,7 @@ module.exports.get = function(req, res){
 };
 
 module.exports.postCreate = function(req, res) {
-	let data = { ...req.body };
+	let data = { ...req.body };  //deep clone
 
 	data.id = shortid.generate();
 	data.avatar = req.file.path.slice(7);

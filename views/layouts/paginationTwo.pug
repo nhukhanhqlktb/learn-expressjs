@@ -20,11 +20,11 @@ nav.mt-3(aria-label='Page navigation example')
 				li.page-item
 					a.page-link(href=`/${pageLink}?page=${page-1}`) Previous
 				li.page-item
-					a.page-link(href=`/${pageLink}?page=${page-1}&limitPage=${limitPage}`)= page-1
+					a.page-link(href=`/${pageLink}?page=${page-1}`)= page-1
 				li.page-item
-					a.page-link.bg-info.text-white(href=`/${pageLink}?page=${page}&limitPage=${limitPage}`)= page
+					a.page-link.bg-info.text-white(href=`/${pageLink}?page=${page}`)= page
 				li.page-item
-					a.page-link(href=`/${pageLink}?page=${page+1}&limitPage=${limitPage}`)= page+1
+					a.page-link(href=`/${pageLink}?page=${page+1}`)= page+1
 				li.page-item
 					a.page-link(href=`/${pageLink}?page=${page+1}`) Next
 			else

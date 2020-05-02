@@ -328,34 +328,7 @@
     }
   ],
   "sessions": [
-    {
-      "sessionId": "aqQalsWiG"
-    },
-    {
-      "sessionId": "YtrUNQ27_",
-      "cart": {
-        "22e24dc7-2e84-4b70-be46-8e8f7ae4faf1": 5,
-        "007f0bce-a86d-4971-b203-5492b83c5255": 5,
-        "4c463350-8451-46d8-a2f0-7af738f00ae3": 1,
-        "47999505-0b6a-4065-8904-1eda7d68f69b": 2,
-        "4acf3f8e-5f97-4173-b037-d24a75cfb06c": 1,
-        "4a17ff4b-0a09-4c3a-9285-667274295725": 1,
-        "644fa177-b1c4-415c-ab11-7cf8811a65bc": 1,
-        "1b90628c-5745-4e0e-95fa-c64a3190ccc7": 9
-      }
-    },
-    {
-      "sessionId": "ELskHei8u"
-    },
-    {
-      "sessionId": "xFP79prBX",
-      "cart": {
-        "22e24dc7-2e84-4b70-be46-8e8f7ae4faf1": 5,
-        "007f0bce-a86d-4971-b203-5492b83c5255": 3,
-        "4a17ff4b-0a09-4c3a-9285-667274295725": 1,
-        "5b0c8777-ba30-4d26-9690-907cf936f83d": 1,
-        "e72343ee-f1bd-4005-8fce-9c9433f66f05": 2
-      }
-    }
+  ],
+  "transfers": [
   ]
 }

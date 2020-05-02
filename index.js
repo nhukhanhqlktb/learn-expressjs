@@ -3,6 +3,10 @@ require('dotenv').config();
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var mongoose = require('mongoose');
+
+// ========= Mongoosejs - create connection =========
+mongoose.connect(process.env.MONGO_URL);
 
 var userRoute = require('./routes/user.route');
 var authRoute = require('./routes/auth.route');
@@ -14,6 +18,23 @@ var sessionMiddleware = require('./middlewares/session.middleware');
 
 var port = 3000;
 var app = express();
+
+// ===== Mongoosejs - check connection =====
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+  console.log('Connected database');
+});
+
+
+
+
+
+
+
+
+// ========= Mongoosejs =========
 
 app.set('view engine', 'pug');
 app.set('views','./views');
